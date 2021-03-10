@@ -115,3 +115,87 @@ function pageShow(obj){
         $("#menu-tabs").addClass("my-tab");
         $("#c_account").addClass("d-block");
     }
+
+    //below tabs button for the different informtation 
+
+    function ShowTab1(obj){
+      $(obj).addClass('active1');
+      $("#tab1_info").addClass('d-block');
+
+      //color reset of tabs
+      $("#t2").removeClass("active2");
+      $("#t3").removeClass("active3");
+      $("#t4").removeClass("active4");
+
+      //hide show information
+      $("#tab2_info").removeClass('d-block');
+      $("#tab3_info").removeClass('d-block');
+      $("#tab4_info").removeClass('d-block');
+      
+      //hide information
+      $("#tab2_info").addClass('d-none');
+      $("#tab3_info").addClass('d-none');
+      $("#tab4_info").addClass('d-none');
+
+    }
+
+    function ShowTab2(obj){
+      $(obj).addClass('active2');
+      $("#tab2_info").addClass('d-block');
+
+      //color reset of tabs
+      $("#t1").removeClass("active1");
+      $("#t3").removeClass("active3");
+      $("#t4").removeClass("active4");
+      
+      //hide show information
+      $("#tab1_info").removeClass('d-block');
+      $("#tab3_info").removeClass('d-block');
+      $("#tab4_info").removeClass('d-block');
+      
+      //hide information
+      $("#tab1_info").addClass('d-none');
+      $("#tab3_info").addClass('d-none');
+      $("#tab4_info").addClass('d-none');
+
+    }
+
+    function ShowTab3(obj){
+      $(obj).addClass('active3');
+      $("#tab3_info").addClass('d-block');
+
+      //color reset of tabs
+      $("#t1").removeClass("active1");
+      $("#t2").removeClass("active2");
+      $("#t4").removeClass("active4");
+
+      //hide  show information
+      $("#tab1_info").removeClass('d-block');
+      $("#tab2_info").removeClass('d-block');
+      $("#tab4_info").removeClass('d-block');
+
+       //hide information
+       $("#tab1_info").addClass('d-none');
+       $("#tab2_info").addClass('d-none');
+       $("#tab4_info").addClass('d-none');
+    }
+
+    function ShowTab4(obj){
+      $(obj).addClass('active4');
+      $("#tab4_info").addClass('d-block');
+
+      //color reset of tabs
+      $("#t1").removeClass("active1");
+      $("#t3").removeClass("active3");
+      $("#t2").removeClass("active2");
+
+      //hide show information
+      $("#tab1_info").removeClass('d-block');
+      $("#tab3_info").removeClass('d-block');
+      $("#tab2_info").removeClass('d-block');
+
+      //hide information
+      $("#tab1_info").addClass('d-none');
+      $("#tab3_info").addClass('d-none');
+      $("#tab2_info").addClass('d-none');
+    }

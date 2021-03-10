@@ -15,6 +15,168 @@
 i {
 	margin-right: 10px;
 }
+
+.my-tabs{
+    position: relative;
+  }
+  .my-tabs li{ 
+    list-style: none;
+    display: table-cell;
+    padding: 8px ;
+    left: -3.5%;
+    
+  }
+
+  .bg-img{      background-image: url("/assets/images/bg-img.jpg");}
+  .fr{    font-family: 'Roboto', sans-serif }
+  .c1{color: #20D9D3}
+  .c2{color: #6293EE}
+  .c3{color: #e318e2}
+  .c4{color: #de0e35}
+  .my-tabs li a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 12px ;
+    transition: 0.3s;
+  }
+  .tab2 a{ 
+    border: 1px solid #ccc ;
+    border-left: 4px solid #6293EE !important;
+    color: rgb(129, 129, 129);
+
+  }
+  .tab1 a{
+    border: 1px solid #ccc ;
+    border-left: 4px solid #20D9D3 !important;
+    color: rgb(129, 129, 129);
+
+
+  }
+  .tab3 a{ 
+    border: 1px solid #ccc ;
+    border-left: 4px solid #e318e2 !important;
+    color: rgb(129, 129, 129);
+
+  }
+  .tab4 a{
+    border: 1px solid #ccc ;
+    border-left: 4px solid #de0e35 !important;
+    color: rgb(129, 129, 129);
+
+
+  }
+
+  .product_tab_section ul{
+    list-style: none !important;
+  }
+
+ .ttt li {
+    color: #00BDB7;
+}
+.ttt li:before {
+    content: "\f05d";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.6em;
+    color: #00BDB7;
+    font-size: 17px;
+}
+
+.sss li {
+    color: #025492;
+}
+.sss li:before {
+    content: "\f05d";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.6em;
+    color: #025492;
+    font-size: 17px;
+}
+
+.aaa li {
+    color: #e318e2;
+}
+.aaa li:before {
+    content: "\f05d";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.6em;
+    color: #e318e2;
+    font-size: 17px;
+}
+
+.ggg li {
+    color: #de0e35;
+}
+.ggg li:before {
+    content: "\f05d";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.6em;
+    color: #de0e35;
+    font-size: 17px;
+}
+
+
+
+.my-tabs .tab1 a:hover{
+	border:1px solid #20D9D3; 
+	color: #fff;
+	background: rgb(180,230,228);
+	background: linear-gradient(90deg, rgba(180,230,228,1) 0%, rgba(11,139,135,1) 100%);
+}
+
+.my-tabs .tab2 a:hover{
+  border:1px solid #6293EE; 
+  color: #fff;
+  background: rgb(168,196,249);
+  background: linear-gradient(90deg, rgba(168,196,249,1) 0%, rgba(51,122,183,1) 100%);
+}
+.my-tabs .tab3 a:hover{
+	border:1px solid #e318e2; 
+     color: #fff;
+     background: rgb(231,196,231);
+	 background: linear-gradient(90deg, rgba(231,196,231,1) 0%, rgba(161,24,161,0.9780287114845938) 100%);
+	}
+	.my-tabs .tab4 a:hover{
+		border:1px solid #de0e35; 
+     color: #fff;
+     background: rgb(232,177,187);
+	 background: linear-gradient(90deg, rgba(232,177,187,0.9752275910364145) 0%, rgba(179,52,75,0.9612219887955182) 100%);
+	}
+	
+	.active1 {
+		border:1px solid #20D9D3; 
+		color: #fff !important;
+		background: rgb(180,230,228);
+		background: linear-gradient(90deg, rgba(180,230,228,1) 0%, rgba(11,139,135,1) 100%);
+	}
+	
+	.active2 {
+		border:1px solid #6293EE; 
+		color: #fff !important;
+		background: rgb(168,196,249);
+		background: linear-gradient(90deg, rgba(168,196,249,1) 0%, rgba(51,122,183,1) 100%);
+	}
+	.active3 {
+		border:1px solid #e318e2; 
+		color: #fff !important;
+		background: rgb(231,196,231);
+		background: linear-gradient(90deg, rgba(231,196,231,1) 0%, rgba(161,24,161,0.9780287114845938) 100%);
+	   }
+	.active4 {
+		border:1px solid #de0e35; 
+	   color: #fff !important;
+	   background: rgb(232,177,187);
+	   background: linear-gradient(90deg, rgba(232,177,187,0.9752275910364145) 0%, rgba(179,52,75,0.9612219887955182) 100%);
+   }
+
 /*----------multi-level-accordian-menu------------*/
 .navbar-logo{
 	padding: 15px;
@@ -202,4 +364,10 @@ i {
 	.img-h-250{ height: 250px;}
 	.my-ifram{width: 280px; height: auto;}
 	.text-sm-center{text-align: center;}
+	.f-small{ font-size: 12px;font-weight: normal;}
+	.my-tabs li{ 
+		padding: 5px ;
+		left: -12%;
+		
+	  }
 }
