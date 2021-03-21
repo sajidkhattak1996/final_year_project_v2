@@ -7,6 +7,72 @@
 	margin: 0;
 	padding: 0;
 }
+
+
+.myanimation1{
+	animation: slide-left 0.8s ease-in-out ;
+}
+@keyframes slide-left {
+    0% {
+        opacity: 0;
+        transform: translateX(350px);
+		
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+		
+    }
+}
+.myanimation2{
+	animation: slide-down 0.8s ease-in-out ;
+}
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translateY(350px);
+		
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+		
+    }
+}
+
+.myanimation3{
+	animation: slide-right 0.8s ease-in-out ;
+}
+@keyframes slide-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-350px);
+		
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+		
+    }
+}
+
+.myanimation_opacity{
+	animation: opacity_open 2s ease-in-out ;
+}
+@keyframes opacity_open {
+    0% {
+        opacity: 0;
+        /* transform: translateX(-350px); */
+		
+    }
+    100% {
+        opacity: 1;
+        /* transform: translateX(0); */
+		
+    }
+}
+
+
 .bg-color{background-color: #1b9ce5;}
 .text-color{color: #f1faff}
 .logo{ width: 70px;height: 30px;}
@@ -63,9 +129,9 @@ i {
     border: 1px solid #ccc ;
     border-left: 4px solid #de0e35 !important;
     color: rgb(129, 129, 129);
+	transition-delay: 1s;
+}
 
-
-  }
 
   .product_tab_section ul{
     list-style: none !important;
@@ -123,6 +189,18 @@ i {
     font-size: 17px;
 }
 
+#tab1_info,#tab2_info,#tab3_info,#tab4_info{ opacity: 1;   animation: slide-up 1s ease; }
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateX(350px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 
 .my-tabs .tab1 a:hover{
@@ -130,6 +208,7 @@ i {
 	color: #fff;
 	background: rgb(180,230,228);
 	background: linear-gradient(90deg, rgba(180,230,228,1) 0%, rgba(11,139,135,1) 100%);
+	
 }
 
 .my-tabs .tab2 a:hover{

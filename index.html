@@ -5,9 +5,13 @@
     <title>Home</title>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
 
-    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
-    <!-- <link rel='stylesheet' href='plugins/fontawesome/css/fontawesome.min.css'> -->
+    <!-- <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'> -->
+    <!-- <link rel='stylesheet' href='plugins/fontawesome/css/all.min.css'> -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+   
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'>
+   
     <link rel="stylesheet" href="plugins/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
@@ -32,16 +36,16 @@
                 <a class="nav-link " href="index.html" id="home_btn" >Home</a>
             </li>
             <li class="nav-item" >
-              <a class="nav-link" href="javascript:void(0);" id="about_btn" onclick="pageShow(about)">About</a>
+              <a class="nav-link" href="javascript:void(0);" id="about_btn" onclick="aboutPageShow()">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" id="create-account-btn"  onclick="pageShow(c_account)">Create Account</a>
+              <a class="nav-link" href="javascript:void(0);" id="create-account-btn"  onclick="createAccountPage()">Create Account</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="javascript:void(0);" id="contact-btn" onclick="pageShow(contact)">Contact</a>
-            </li>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0);" id="login-btn" onclick="pageShow(login)">Log in</a>
+              <a class="nav-link" href="javascript:void(0);" id="login-btn" onclick="loginPageShow()">Log in</a>
             </li>
     
           </ul>
@@ -49,7 +53,7 @@
   </nav>
   <!-- partial -->
 
-    <div id="carouselExampleControls" class="carousel slide pb-3" data-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide pb-3 myanimation2" data-ride="carousel" >
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="assets/images/Peshawar_University.jpg" class="d-block w-100" alt="..." style="height: 550px;">
@@ -72,267 +76,15 @@
     </div>
 
 
-<div class="">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="container content">
-        <div class="row vertical-row ">
-            <div class="col-md-6 p-5 ">
-                <h2>A decade of successful partnership with over 200 institutions.</h2>
-                <p>
-                    No matter what your institution's size is, we have a solution that suits you better.
-                </p>
-                <hr class="space m">
-                <div class="row counters" id="inview-example">
-                      <div class="col-md-4 common-box">
-                        <div class="common-box-cell">
-                          <div class="counter-num">
-                              <b><span class="timer" data-count="15">15</span></b>
-                          </div>
-                          <div class="counter-text">Countries</div>
-                        </div>
-                      </div>
-                      <div class="common-box col-md-4">
-                      <div class="common-box-cell">
-                        <div class="counter-num">
-                            <b><span class="timer" data-count="1000">1000</span><span>+</span></b>
-                        </div>
-                        <div class="counter-text">Colleges</div>
-                      </div>
-                      </div>
-                    
-                      <div class="common-box col-md-4">
-                        <div class="common-box-cell">
-                          <div class="counter-num">
-                            <b><span class="timer" data-count="20">20</span><span>+</span></b>
-                          </div>
-                            <div class="counter-text">Modules</div>
-                        </div>
-                      </div>
-                </div>
-            </div>
-            <div class="col-md-6 p-5">
-                <img src="assets/images/campaign_count.png" alt="Campaign projects" class="shadow-lg rounded">
-            </div>
-        </div>
-    </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="p-5">
-  <div class="container-fuid">
-    <div class="row ml-2 mr-1">
-          <div class="col-12  p-5">
-            <h2 class="text-center">Catered to Everyone's needs</h2>
-          </div>
-          <div class="col-lg-4 col-md-4 p-3  shadow ">
-            <div class="advs-box advs-box-top-icon" data-trigger="hover">
-            <h3>Faculty / Staff</h3>
-              <p>
-              </p><p>Track each student in real time to ensure they are staying on task. Collaborative tools to broadcast messages to students and support learning.</p>
-
-              <p></p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 p-3  shadow ">
-            <div class="advs-box advs-box-top-icon" data-trigger="hover">
-            <h3>Students</h3>
-              <p>
-              </p><p>Enable students to grasp concepts more quickly, understand complex &nbsp;instruction much better and retain them better over time so that amount of time struggling with the program is reduced, and they can get their work done.</p>
-
-              <p></p>
-            </div>
-          </div>
-           <div class="col-lg-4 col-md-4 p-3  shadow ">
-            <div class="advs-box advs-box-top-icon" data-trigger="hover">
-            <h3>Management</h3>
-              <p>
-              </p><p>Remove distractions in the classroom environment engage the attention of students in resulting in a measurable and significant improvement in student achievement and reduction in failure rate.</p>
-
-              <p></p>
-            </div>
-          </div>
-      </div>
-  </div>
-</div>
-
-
-<div class="container-fluid pb-5" style="background-image: url('http://localhost/final_year_project_v2/assets/images/bg-img.jpg')">
-  <div class="container content">
-    <div class="title-modern title-modern-2 st-icon text-center fr p-5">
-      <h2>Key features that sets us apart</h2>
-    </div>
-
-    <div class="col-md-12">
-      <div class="tab-box pills product_tab_section" data-tab-anima="fade-right">
-
-        <style>
-        .my-tabs li:focus, .my-tabs li:active {
-          outline: none !important;
-          box-shadow: none  !important;
-        }
-        </style>
-    
-        
-        <ul class="my-tabs row" >
-          <li class="tab1 col-lg-3 col-md-6"><a href="javascript:void(0)" class="btn f-small  btn-md w-100 active1 " onclick="ShowTab1(this)" id="t1" >Student information</a> </li>
-          <li class="tab2 col-lg-3 col-md-6"><a href="javascript:void(0)" class="btn f-small  btn-md w-100" onclick="ShowTab2(this)" id="t2">Scheduling</a></li>
-          <li class="tab3 col-lg-3 col-md-6"><a href="javascript:void(0)" class="btn f-small  btn-md w-100" onclick="ShowTab3(this)" id="t3">Assessments</a></li>
-          <li class="tab4 col-lg-3 col-md-6"><a href="javascript:void(0)" class="btn  f-small btn-md w-100" onclick="ShowTab4(this)" id="t4">Grading and Report Card</a></li>
-        </ul>
-    
-                                            
-      <div class="panel product_tab_list_item fade-right" id="tab1_info"  style="transition-duration: 300ms; animation-duration: 300ms; transition-timing-function: ease; transition-delay: 0ms;">
-        <h2 class="fr c1">Student information</h2>
-            <p>
-              Instructors can view and track student information such as student attendance, report card, scheduling, transcript, discipline, tests, assignments, and contact information.Instructors can view and mark attendance of students from anywhere. Easily track attendance records and respond to disruptions and problems.Get complete control over student discipline incidents reportedly committed in the classroom and campus. Define behavior codes in various categories including bullying, accidents, fighting, vandalism, forgery, etc.
-            </p>
-            <p>
-              Configure action codes by identifying the actions that occurred or were assigned to a participant as a result of the incident as well as meritorious actions and corresponding rewards. Access heat maps, charts and graphs, reports that reveal student behavior patterns and send internal notifications from anywhere.Instructors can track the entire student activities in the class and provide role-based access to data and streaming audio/video. Remotely control the class and help multiple students and class simultaneously, at the same time making teaching effective.Integrated student information system provides one-stop solution to classroom management software to save time and money. Eliminate navigating multiple systems and all the technology barriers associated with SIS software.
-            </p>
-            <ul class="ttt">
-              <li>Access student data</li>
-              <li>Submit attendance</li>
-              <li>Discipline &amp; Conduct</li>
-              <li>Incident tracking, consequence &amp; rewards</li>
-              <li>Role based access</li>
-              <li>Integration</li>
-            </ul>                                    
-        </div>
-                                                            
-          <div class="panel panel-key-1 product_tab_list_item fade-right d-none" id="tab2_info" style="transition-duration: 300ms; animation-duration: 300ms; transition-timing-function: ease; transition-delay: 0ms;">
-            <h2 class="fr c2">Scheduling</h2>
-            <p>
-              Enable instructors to plan, create and modify schedules courses and periods and assign 
-              classrooms and locations based on requirements. Customize scheduling to add, drop and 
-              transfer courses on student schedules. Also schedule random course meetings in different 
-              classrooms.
-            </p>
-
-            <p>
-              Enable students to take class schedule and notes on the fly including terms and concepts 
-              that they don’t recognize. Students can discuss and work together on topics related to the
-               class with one another. Instructors can share student observations, leave feedback on 
-               student’s profile.
-            </p>
-
-            <ul class="sss">
-              <li>Class scheduling</li>
-              <li>Customize scheduling</li>
-              <li>Class notes</li>
-            </ul>                      
-          </div>
-                                                            
-          <div class="panel panel-key-2 product_tab_list_item fade-right d-none" id="tab3_info" style="transition-duration: 300ms; animation-duration: 300ms; transition-timing-function: ease; transition-delay: 0ms;">
-            <h2 class="fr c3">Assessments</h2>
-
-            <p>
-              Enable instructors to create different assignment types to classes. Submit assignments
-               Students can submit assignments to the Dropbox for review. Instructors can review assignments 
-               with comments, and share feedback with students and parents.Enable faculties to create a 
-               variety of online tests and build complete assessment for students at all grades and skill 
-               levels to improve student achievement and take intelligent decisions. Assign tests to students 
-               and measure success.
-            </p>
-
-            <p>
-              Instructors can conduct quiz, survey and take polls in classes to assess students discretely 
-              by sending a true/false or multiple choice questions to the class with the option to provide 
-              student’s answer anonymously.
-            </p>
-            <ul class="aaa">
-            <li>Assignments</li>
-            <li>Online tests and quizzes</li>
-            <li>Surveys and Polls</li>
-            </ul>                          
-          </div>
-                                                            
-          <div class="panel panel-key-3 product_tab_list_item active fade-right d-none" id="tab4_info" style="transition-duration: 300ms; animation-duration: 300ms; transition-timing-function: ease; transition-delay: 0ms;">
-            <h2 class="fr c4">Grading and Report Card</h2>
-                  <p>
-                    Faculties can evaluate student’s progress and achievement through 
-                    tests and assessments and assign grades. Faculties can view and edit 
-                    grades to courses and add comments with the ability to send email 
-                    notifications to parents.Customize report cards with pre-designed 
-                    templates and automatically sync student’s attendance records and 
-                    grades from the database with real-time status updates of report cards.
-                  </p>
-
-                  <p>
-                    Enable students, instructors, staff and parents to seamlessly connect 
-                    and share information via email, SMS or mobile devices. Send automatic 
-                    notifications, and messages on attendance, assignments, grades, and events 
-                    to all of their students, parents and groups in all of their class.
-                  </p>
-
-                  <ul class="ggg">
-                      <li>Grading</li>
-                      <li>Report card</li>
-                      <li>Notifications</li>
-                  </ul>
-
-                                    
-          </div>
-                                
-        
-      </div>
-    </div>
-  </div>
-</div>
 
 
 
 
-
-
-
-
-
-
-
-
-    <footer class="bg-color page-footer font-small teal pt-4" id="ft">
-      <div class="" >
-          <div class="col-lg-8 "  style="margin: 0 auto;"> 
-                <div class="row"> 
-                    <div class="col-lg-6 col-12 text-sm-center">
-                        <!-- Content -->
-                        <h5 class="text-uppercase font-weight-bold">Contacts Information</h5>
-                        <p>
-                          <i class="fas fa-envelope glyphicon glyphicon-envelope"></i>&nbsp;&nbsp;sajidktkkpk@gmail.com <br>
-                          <i class="fas fa-phone-alt"></i>&nbsp;&nbsp;091 1234567
-                          <br>
-                          <i class="fas fa-mobile-alt"></i></i>&nbsp;&nbsp;0310 2093992
-                        </p>
-                    </div>
-
-                    <div class="col-lg-6 col-12 text-sm-center">
-                      <!-- Content -->
-                        <h5 class="text-uppercase font-weight-bold" style="letter-spacing: 1px; word-spacing: 5px">Connect With Us</h5>
-                        <p>
-                          <a href="https://www.facebook.com">  <i class="fab fa-facebook-square" style="font-size: 30px;text-decoration: none;color: #fff;margin-left: 5px"></i></a>
-                          <a href="https://twitter.com">  <i class="fab fa-twitter-square" style="font-size: 30px;text-decoration: none;color: #fff;margin-left: 5px"></i></a>
-                          <a href="https://aboutme.google.com/u/0/?referer=gplus"><i class="fab fa-google-plus-square" style="font-size: 30px;text-decoration: none;color: #fff;margin-left: 5px"></i> </a>
-                          <a href="https://www.instagram.com/"><i class="fab fa-instagram" style="font-size: 30px;text-decoration: none;color: #fff;margin-left: 5px;margin-right: 5px"></i> </a>
-                          <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp-square" style="font-size: 30px;color: #fff"></i> </a>
-
-                  </div>
-                </div>
-              </div>
-          <div class="container-fluid  text-center py-1 text-light " style="font-size: 16px;background: #1473aa;border-radius: 0px 0px 10px 10px;"> © 2021  
-            <a href="index.html" class="" style="text-decoration:none;color: rgb(255, 255, 255);"> Class Room Management System</a>  all rights reserved.
-          </div>
-        </div>
-</footer>
-
-</div>
 
 
 
     <!-- about me -->
-    <div class="container-fluid  p-4 d-none" id="about">
+    <div class="container-fluid  p-4 myanimation1 d-none" id="about" >
       <div class="text-center col-lg-12" style="margin: 0 auto;">
         <h2 class="text-center" id="login_heading"><b>About Class Room Management System</b></h2>
       </div>
@@ -376,7 +128,7 @@
 
 
     <!-- login  -->
-<div class="container-fluid  p-4 d-none" id="login">
+<div class="container-fluid myanimation1 p-4 d-none" id="login">
   <div class="text-center col-lg-10" style="margin: 0 auto;">
     <h2 class="text-center" id="login_heading"><b>Login to Class Room Management System</b></h2>
   </div>
@@ -397,7 +149,7 @@
                 <button type="submit" class="btn my-btn btn-md w-50">Log in</button>
 
                 <div class="pp pt-5" >
-                  <p>Forgot your password?  <a href="forgot_password.php"> Click here</a></p>
+                  <p>Forgot your password?  <a href="javascript: alert('this is under working...')"> Click here</a></p>
                   <p><b>New User ?  </b>  <a href="javascript:void(0)" onclick="CreateAccount()"> Click here</a>  </p
                   <p> <b> Privacy Policy </b>
                     <p style="font-size: 1.0em">
@@ -413,9 +165,105 @@
         </div>
       </div>
       <!-- ended -->
+
+
+    <!-- forgot password   -->
+    <div class="container-fluid myanimation_opacity p-4 d-none" id="forgot_password">
+      <div class="text-center col-lg-10" style="margin: 0 auto;">
+        <h2 class="text-center" id="login_heading"><b>Recover Your Account Password</b></h2>
+      </div>
+      <div class="col-lg-10 login-form-border" style="margin: 0 auto;">
+            <div class="row  p-3">
+                <div class="col-lg-8 col-12 " style="margin: 0 auto;">
+                   <form>
+                    <div class="form-group">
+                      <label for="recovery_email_address">Email address</label>
+                      <input type="email" class="form-control" id="recovery_email_address" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                   
+                    <div class="form-group">
+                      <label  for="select_your_question_for_recover">Select  Security  Qustion </label>
+                      <select name="select_question" class="form-control  br-color"   id="select_your_question_for_recover" required>
+                        <option value="">Select Your Security Question</option>
+                          <option value="What is Your Childhood School name?">What is Your Childhood School name?</option>
+                          <option value="What Is your favorite book?">What Is your favorite book?</option>
+                          <option value="What is the name of the road you grew up on?">What is the name of the road you grew up on?</option>
+                          <option value="What is your mother's maiden name?">What is your mother's maiden name?</option>
+                          <option value="What was the first company that you worked for?">What was the first company that you worked for?</option>
+                          <option value="Where did you go to high school/college?">Where did you go to high school/college?</option>
+                          <option value="What is your favorite food?">What is your favorite food?</option>
+                          <option value="What city were you born in?">What city were you born in?</option>
+                          <option value="Where is your favorite place to vacation?">Where is your favorite place to vacation?</option>
+                          <option value="What is your Childhood friend name?">What is your Childhood friend name?</option>
+                          <option value="What is your bestfriend name?">What is your bestfriend name?</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label id="enter_answer_for_recover">Enter Answer</label>
+                      <input type="text" name="q_answer" id="enter_answer_for_recover"  placeholder="Enter the Answer of Your Security Question" class="form-control  br-color" autocomplete="off"  maxlength="30" required>
+                    </div>
+                   
+                    <button type="submit" class="btn my-btn btn-md w-50">Recover Password</button>
+    
+                    <div class="pp pt-5" >
+                      <p>Click for Login ?  <a href="javascript: Login()"> Click here</a></p>
+                      <p><b>New User ?  </b>  <a href="javascript:CreateAccount()" > Click here</a>  </p
+                      <p> <b> Privacy Policy </b>
+                        <p style="font-size: 1.0em">
+                          We take your privacy very seriously.
+                          We do not share your detail for marketing
+                          purposes with the external companies.
+                        </p>
+                      </p>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+    </div>
+  <!--forgot password ended -->
+
+      <!-- reset password   -->
+      <div class="container-fluid myanimation_opacity p-4 d-none" id="reset_password">
+        <div class="text-center col-lg-10" style="margin: 0 auto;">
+          <h2 class="text-center" id="login_heading"><b>Recove Your Account Password</b></h2>
+        </div>
+        <div class="col-lg-10 login-form-border" style="margin: 0 auto;">
+              <div class="row  p-3">
+                  <div class="col-lg-8 col-12 " style="margin: 0 auto;">
+                     <form>
+                      <div class="form-group">
+                        <label for="recover_email">Email address</label>
+                        <input type="email" class="form-control" id="recover_email" aria-describedby="emailHelp" placeholder="Enter email">
+                      </div>
+                     
+                      <div class="form-group">
+                        <label for="newpassword">Enter New Password</label>
+                        <input type="password" class="form-control" id="newpassword" aria-describedby="emailHelp" placeholder="Enter New Password">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="reenter_newpassword">Conform Enter Password</label>
+                        <input type="password" class="form-control" id="reenter_newpassword" aria-describedby="emailHelp" placeholder="Confrom Your Password">
+                      </div>
+                     
+                     
+                      <button type="submit" class="btn my-btn btn-md w-50">Reset Password</button>
+      
+    
+                    </form>
+                  </div>
+                </div>
+              </div>
+      </div>
+    <!--reset password ended -->
+
+
+
       
 <!-- Create Account on crm -->
-<div class="container-fluid  p-4 d-none" id="c_account">
+<div class="container-fluid  myanimation1 p-4 d-none" id="c_account">
   <div class="text-center col-lg-10" style="margin: 0 auto;">
     <h2 class="text-center" id="login_heading"><b>Create Account on Class Room Management System</b></h2>
   </div>
@@ -447,47 +295,11 @@
 </div>
 <!-- Create Account ended -->
 
-  <!-- Footer -->
-  <footer class="page-footer font-small teal pt-3 d-none" id="contact">
-    <div class="text-center col-lg-8 col-11" style="margin: 0 auto;">
-      <h2 class="text-center" id="login_heading"><b>Contact About Class Room Management System</b></h2>
-    </div>
-    <div class="col-lg-8 col-11 login-form-border" style="margin: 0 auto;">
-      <div class="row">
-            <div class="col-lg-6 col-11 mb-4 my-color">
-                <!-- Content -->
-                  <h5 class="text-uppercase font-weight-bold">Contacts Information</h5>
-                  <p >
-                    <i class="fas fa-envelope glyphicon glyphicon-envelope"></i>&nbsp;&nbsp;sajidktkkpk@gmail.com <br>
-                    <i class="fas fa-phone-alt"></i>&nbsp;&nbsp;091 1234567
-                    <br>
-                    <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp; 0310 2093992
-                  </p>
-            </div>
-      
-            <div class="col-lg-6 col-12 my-color">
-              <!-- Content -->
-              <h5 class="text-uppercase font-weight-bold" style="letter-spacing: 1px; word-spacing: 5px">Connect With Us</h5>
-              <p>
-                  <a href="https://www.facebook.com"><i class="fab fa-facebook-square" style="font-size: 30px;text-decoration: none;color: #1b9ce5;margin-left: 5px"></i></a>
-                  <a href="https://twitter.com"><i class="fab fa-twitter-square" style="font-size: 30px;text-decoration: none;color: #1b9ce5;margin-left: 5px"></i></a>
-                  <a href="https://aboutme.google.com/u/0/?referer=gplus"><i class="fab fa-google-plus-square" style="font-size: 30px;text-decoration: none;color: #1b9ce5;margin-left: 5px"></i> </a>
-                  <a href="https://www.instagram.com/"><i class="fab fa-instagram" style="font-size: 30px;text-decoration: none;color: #1b9ce5;margin-left: 5px;margin-right: 5px"></i> </a>
-                  <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp-square" style="font-size: 30px;color: #1b9ce5"></i> </a>
-                </p>
-              </div>
 
-              <!-- Copyright -->
-              <div class="col-12  text-center py-1 text-light " style="font-size: 16px;background: #1473aa;border-radius: 0px 0px 10px 10px;"> © 2021  
-      <a href="index.html" class="" style="text-decoration:none;color: rgb(255, 255, 255);"> Class Room Management System</a>  all rights reserved.
-    </div>
-      </div>
-    </div>
-  </footer>
 
   
 <!-- create teacher account  -->
-<div class="container  p-4 d-none" id="ct_account">
+<div class="container myanimation1  p-4 d-none" id="ct_account">
   <div class="text-center col-lg-10" style="margin: 0 auto;">
     <h2 class="text-center" id="login_heading"><b>Create Teacher Account on Class Room Management System</b></h2>
   </div>
@@ -627,7 +439,7 @@
 
 
 <!-- create student account  -->
-<div class="container  p-4 d-none" id="cs_account">
+<div class="container myanimation1  p-4 d-none" id="cs_account">
   <div class="text-center col-lg-10" style="margin: 0 auto;">
     <h2 class="text-center" id="login_heading"><b>Create Student Account on Class Room Management System</b></h2>
   </div>
@@ -761,10 +573,254 @@
 
 
 
+<div id="more_details">
+<div class="p-5 myanimation3">
+  <div class="container-fuid">
+    <div class="row ml-2 mr-1">
+          <div class="col-12  p-5">
+            <h2 class="text-center">Catered to Everyone's needs</h2>
+          </div>
+          <div class="col-lg-4 col-md-4 p-3  shadow ">
+            <div class="advs-box advs-box-top-icon" data-trigger="hover">
+            <h3>Faculty / Staff</h3>
+              <p>
+              </p><p>Track each student in real time to ensure they are staying on task. Collaborative tools to broadcast messages to students and support learning.</p>
+
+              <p></p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 p-3  shadow ">
+            <div class="advs-box advs-box-top-icon" data-trigger="hover">
+            <h3>Students</h3>
+              <p>
+              </p><p>Enable students to grasp concepts more quickly, understand complex &nbsp;instruction much better and retain them better over time so that amount of time struggling with the program is reduced, and they can get their work done.</p>
+
+              <p></p>
+            </div>
+          </div>
+           <div class="col-lg-4 col-md-4 p-3  shadow ">
+            <div class="advs-box advs-box-top-icon" data-trigger="hover">
+            <h3>Management</h3>
+              <p>
+              </p><p>Remove distractions in the classroom environment engage the attention of students in resulting in a measurable and significant improvement in student achievement and reduction in failure rate.</p>
+
+              <p></p>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
 
 
+<div class="myanimation3">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="container content">
+        <div class="row vertical-row ">
+            <div class="col-md-6 p-5 ">
+                <h2>A decade of successful partnership with over 200 institutions.</h2>
+                <p>
+                    No matter what your institution's size is, we have a solution that suits you better.
+                </p>
+                <hr class="space m">
+                <div class="row counters" id="inview-example">
+                      <div class="col-md-4 common-box">
+                        <div class="common-box-cell">
+                          <div class="counter-num">
+                              <b><span class="timer" data-count="15">15</span></b>
+                          </div>
+                          <div class="counter-text">Countries</div>
+                        </div>
+                      </div>
+                      <div class="common-box col-md-4">
+                      <div class="common-box-cell">
+                        <div class="counter-num">
+                            <b><span class="timer" data-count="1000">1000</span><span>+</span></b>
+                        </div>
+                        <div class="counter-text">Colleges</div>
+                      </div>
+                      </div>
+                    
+                      <div class="common-box col-md-4">
+                        <div class="common-box-cell">
+                          <div class="counter-num">
+                            <b><span class="timer" data-count="20">20</span><span>+</span></b>
+                          </div>
+                            <div class="counter-text">Modules</div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-5">
+                <img src="assets/images/campaign_count.png" alt="Campaign projects" class="shadow-lg rounded">
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid pb-5" style="background-image: url('http://localhost/final_year_project_v2/assets/images/bg-img.jpg')">
+  <div class="container content">
+    <div class="title-modern title-modern-2 st-icon text-center fr p-5">
+      <h2>Key features that sets us apart</h2>
+    </div>
+
+    <div class="col-md-12">
+      <div class="tab-box pills product_tab_section" data-tab-anima="fade-right">
+
+        <style>
+        .my-tabs li:focus, .my-tabs li:active {
+          outline: none !important;
+          box-shadow: none  !important;
+        }
+        </style>
+    
+        
+        <ul class="my-tabs row" >
+          <li class="tab1 col-lg-3 col-md-6"><a href="javascript:void(0)" class="btn f-small  btn-md w-100 active1 " onclick="ShowTab1(this)" id="t1" >Student information</a> </li>
+          <li class="tab2 col-lg-3 col-md-6"><a href="javascript:void(0)" class="btn f-small  btn-md w-100" onclick="ShowTab2(this)" id="t2">Scheduling</a></li>
+          <li class="tab3 col-lg-3 col-md-6"><a href="javascript:void(0)" class="btn f-small  btn-md w-100" onclick="ShowTab3(this)" id="t3">Assessments</a></li>
+          <li class="tab4 col-lg-3 col-md-6"><a href="javascript:void(0)" class="btn  f-small btn-md w-100" onclick="ShowTab4(this)" id="t4">Grading and Report Card</a></li>
+        </ul>
+    
+                                            
+      <div class="panel product_tab_list_item fade-right" id="tab1_info"  style="transition-duration: 300ms; animation-duration: 300ms; transition-timing-function: ease; transition-delay: 0ms;">
+        <h2 class="fr c1">Student information</h2>
+            <p>
+              Instructors can view and track student information such as student attendance, report card, scheduling, transcript, discipline, tests, assignments, and contact information.Instructors can view and mark attendance of students from anywhere. Easily track attendance records and respond to disruptions and problems.Get complete control over student discipline incidents reportedly committed in the classroom and campus. Define behavior codes in various categories including bullying, accidents, fighting, vandalism, forgery, etc.
+            </p>
+            <p>
+              Configure action codes by identifying the actions that occurred or were assigned to a participant as a result of the incident as well as meritorious actions and corresponding rewards. Access heat maps, charts and graphs, reports that reveal student behavior patterns and send internal notifications from anywhere.Instructors can track the entire student activities in the class and provide role-based access to data and streaming audio/video. Remotely control the class and help multiple students and class simultaneously, at the same time making teaching effective.Integrated student information system provides one-stop solution to classroom management software to save time and money. Eliminate navigating multiple systems and all the technology barriers associated with SIS software.
+            </p>
+            <ul class="ttt">
+              <li>Access student data</li>
+              <li>Submit attendance</li>
+              <li>Discipline &amp; Conduct</li>
+              <li>Incident tracking, consequence &amp; rewards</li>
+              <li>Role based access</li>
+              <li>Integration</li>
+            </ul>                                    
+        </div>
+                                                            
+          <div class="panel panel-key-1 product_tab_list_item fade-right d-none" id="tab2_info" style="transition-duration: 300ms; animation-duration: 300ms; transition-timing-function: ease; transition-delay: 0ms;">
+            <h2 class="fr c2">Scheduling</h2>
+            <p>
+              Enable instructors to plan, create and modify schedules courses and periods and assign 
+              classrooms and locations based on requirements. Customize scheduling to add, drop and 
+              transfer courses on student schedules. Also schedule random course meetings in different 
+              classrooms.
+            </p>
+
+            <p>
+              Enable students to take class schedule and notes on the fly including terms and concepts 
+              that they don’t recognize. Students can discuss and work together on topics related to the
+               class with one another. Instructors can share student observations, leave feedback on 
+               student’s profile.
+            </p>
+
+            <ul class="sss">
+              <li>Class scheduling</li>
+              <li>Customize scheduling</li>
+              <li>Class notes</li>
+            </ul>                      
+          </div>
+                                                            
+          <div class="panel panel-key-2 product_tab_list_item fade-right d-none" id="tab3_info" style="transition-duration: 300ms; animation-duration: 300ms; transition-timing-function: ease; transition-delay: 0ms;">
+            <h2 class="fr c3">Assessments</h2>
+
+            <p>
+              Enable instructors to create different assignment types to classes. Submit assignments
+               Students can submit assignments to the Dropbox for review. Instructors can review assignments 
+               with comments, and share feedback with students and parents.Enable faculties to create a 
+               variety of online tests and build complete assessment for students at all grades and skill 
+               levels to improve student achievement and take intelligent decisions. Assign tests to students 
+               and measure success.
+            </p>
+
+            <p>
+              Instructors can conduct quiz, survey and take polls in classes to assess students discretely 
+              by sending a true/false or multiple choice questions to the class with the option to provide 
+              student’s answer anonymously.
+            </p>
+            <ul class="aaa">
+            <li>Assignments</li>
+            <li>Online tests and quizzes</li>
+            <li>Surveys and Polls</li>
+            </ul>                          
+          </div>
+                                                            
+          <div class="panel panel-key-3 product_tab_list_item active fade-right d-none" id="tab4_info" style="transition-duration: 300ms; animation-duration: 300ms; transition-timing-function: ease; transition-delay: 0ms;">
+            <h2 class="fr c4">Grading and Report Card</h2>
+                  <p>
+                    Faculties can evaluate student’s progress and achievement through 
+                    tests and assessments and assign grades. Faculties can view and edit 
+                    grades to courses and add comments with the ability to send email 
+                    notifications to parents.Customize report cards with pre-designed 
+                    templates and automatically sync student’s attendance records and 
+                    grades from the database with real-time status updates of report cards.
+                  </p>
+
+                  <p>
+                    Enable students, instructors, staff and parents to seamlessly connect 
+                    and share information via email, SMS or mobile devices. Send automatic 
+                    notifications, and messages on attendance, assignments, grades, and events 
+                    to all of their students, parents and groups in all of their class.
+                  </p>
+
+                  <ul class="ggg">
+                      <li>Grading</li>
+                      <li>Report card</li>
+                      <li>Notifications</li>
+                  </ul>
+
+                                    
+          </div>
+                                
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- ended more_details -->
 
 
+<!-- footer start Here -->
+  <footer class="bg-color page-footer font-small teal pt-4" id="ft">
+    <div class="" >
+        <div class="col-lg-8 "  style="margin: 0 auto;"> 
+              <div class="row"> 
+                  <div class="col-lg-6 col-12 text-sm-center">
+                      <!-- Content -->
+                      <h5 class="text-uppercase font-weight-bold">Contacts Information</h5>
+                      <p>
+                        <i class="fas fa-envelope glyphicon glyphicon-envelope"></i>&nbsp;&nbsp;sajidktkkpk@gmail.com <br>
+                        <i class="fas fa-phone-alt"></i>&nbsp;&nbsp;091 1234567
+                        <br>
+                        <i class="fas fa-mobile-alt"></i></i>&nbsp;&nbsp;0310 2093992
+                      </p>
+                  </div>
+
+                  <div class="col-lg-6 col-12 text-sm-center">
+                    <!-- Content -->
+                      <h5 class="text-uppercase font-weight-bold" style="letter-spacing: 1px; word-spacing: 5px">Connect With Us</h5>
+                      <p>
+                        <a href="https://www.facebook.com"> <i class="fab fa-facebook-square" class="fab fa-facebook-square" style="font-size: 30px;text-decoration: none;color: #fff;margin-left: 5px"></i></a>
+                        <a href="https://twitter.com">  <i class="fab fa-twitter-square" style="font-size: 30px;text-decoration: none;color: #fff;margin-left: 5px"></i></a>
+                        <a href="https://aboutme.google.com/u/0/?referer=gplus"><i class="fab fa-google-plus-square" style="font-size: 30px;text-decoration: none;color: #fff;margin-left: 5px"></i> </a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram" style="font-size: 30px;text-decoration: none;color: #fff;margin-left: 5px;margin-right: 5px"></i> </a>
+                        <a href="https://www.whatsapp.com/"><i class="fab fa-whatsapp-square" style="font-size: 30px;color: #fff"></i> </a>
+
+                </div>
+              </div>
+            </div>
+        <div class="container-fluid  text-center py-1 text-light " style="font-size: 16px;background: #1473aa;border-radius: 0px 0px 10px 10px;"> © 2021  
+          <a href="index.html" class="" style="text-decoration:none;color: rgb(255, 255, 255);"> Class Room Management System</a>  all rights reserved.
+        </div>
+      </div>
+</footer>
+<!-- ended footer -->
 
 
 
